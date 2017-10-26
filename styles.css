@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Stylesheet */
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background Colours */
+
+#index{
+    
+}
+
+#about, #contact{
+    background: #B3FFAB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+#registration, #guidelines, #t-and-c{
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#sponsor{
+    background-color: dodgerblue;
+}
+
+#charities{
+    background: #00c3ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.videos{
+    
+}
+
+.news{
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Header */
+
+header{
+    background-color: #fff;
+}
+
+.logo{
+    height: 60px;
+}
+
+.icon{
+    height: 30px;
+}
+
+
+
+/* Page Contents */
+
+.page-contents{
+    margin-top: 180px;
+    margin-bottom: 80px;
+    background-color: #fff;
+}
+
+/* Footer */
+
+footer{
+    background-color: #414141;
+    height: 300px;
+}
+
+.copyright{
+    font-size: 0.8em;
+    color:#fff;
+}
+
+/* Type */
+
+.content-title{
+    font-family: 'Josefin Sans', sans-serif;
+    color:#414141;
+}
+
+.content-text{
+    color: #414141;    
+}
+
+/* Button */
+
+.link-btn{
+    
+}
+
+.scroll-btn{
+    
+}
+
+/* Effects */
+
+.drop-shadow-header{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
