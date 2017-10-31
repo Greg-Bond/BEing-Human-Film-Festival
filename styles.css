@@ -200,5 +200,10 @@ html{
 
 /* Button */
 
+button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
 /* Effects */
