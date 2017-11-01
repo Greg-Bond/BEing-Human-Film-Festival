@@ -12,16 +12,16 @@ html{
 }
 
 #about, #contact{
-    background: #B3FFAB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-color: #12fff7; /* Fallback color */
 }
 
 
 #registration, #guidelines, #t-and-c{
-    background: #ec008c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-color: #fc6767;  /* fallback for old browsers */
 }
 
 #sponsors{
@@ -29,19 +29,21 @@ html{
 }
 
 #charities{
-    background: #00c3ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to top, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-color: #00c3ff;  /* fallback for old browsers */
 }
 
 .videos{
-    
+    background: -webkit-linear-gradient(to right, #8e27f5, #4abce1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e27f5, #4abce1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-color: #8e27f5;  /* fallback for old browsers */
 }
 
 .news{
-    background: #FF5F6D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-color: #FF5F6D;  /* fallback for old browsers */
 }
 
 /* Header */
@@ -107,6 +109,22 @@ html{
     color:#414141;
 }
 
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+    .fixed-top
+    {
+    position: relative;
+    top: auto;
+    }
+}
+
+button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	border:none;
+}
+
 
 /* Page Contents */
 
@@ -116,6 +134,14 @@ html{
     background-color: #fff;
 }
 
+@media (max-width: 767px)
+{
+    .page-contents
+    {
+    margin-top:50px;
+	margin-bottom: 50px;
+    }
+}
 /* Footer */
 
 
@@ -200,10 +226,6 @@ html{
 
 /* Button */
 
-button{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
+
 
 /* Effects */
