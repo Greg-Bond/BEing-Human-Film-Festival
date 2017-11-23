@@ -229,6 +229,21 @@ button{
     color: #414141;    
 }
 
+.content-header{
+    color: #414141;
+    font-size: 1.2em;
+}
+
+.bold{
+    font-weight: 550;
+}
+
+.sub-heading{
+    color: #414141;
+    font-size: 1em;
+    font-weight: 700;
+}
+
 /* Carousel */
 
 .carousel-item{
