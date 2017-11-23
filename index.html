@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>2017 Videos | BEing Human Film Festival</title>
+    <title>Home | BEing Human Film Festival</title>
     
     <!--Favicon-->
     <link rel="icon" type="image/png" href="content/images/BHico.png" sizes="16x16">
@@ -16,14 +16,14 @@
     <meta name="description" content="">
     <!--Open Graph Data-->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.beinghumanfilmfestival.com/2017-videos/">
-    <meta property="og:title" content="2017 Videos | BEing Human Film Festival">
+    <meta property="og:url" content="http://www.beinghumanfilmfestival.com/">
+    <meta property="og:title" content="Home | BEing Human Film Festival">
     <meta property="og:image" content="content/images/BHFFog.jpg">
     <meta property="og:description" content="">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
     <!--Base href-->
-    <!--<base href="http://www.beinghumanfilmfestival.com/">-->
+    <!--<base href="http://www.beinghumanfilmfestival.com/" target="_blank">-->
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!--Font Awesome-->
@@ -31,74 +31,7 @@
     <!--CSS-->
     <link rel="stylesheet"	type="text/css"	href="css/styles.css">
 </head>
-    
-<?php
-    
-//Get data from DB
-    
-include_once ('php/connection.php');
-
-$sql = "select * from videos where VideoYear = 2017";
-$result = mysqli_query($conn,$sql);
-$count = mysqli_num_rows($result);
-
-$slides='';
-$indicators='';
-$counter=0;
-$videoTitle = '';
-$videoCreator = '';
-$videoSchool = '';
-$videoCountry = '';
-$videoLink = '';
-$videoImage = '';
-
-
-while($row=mysqli_fetch_array($result))
-{
-    $videoTitle = $row['VideoTitle'];
-    $videoCreator = $row['VideoCreator'];
-    $videoSchool = $row['VideoSchool'];
-    $videoCountry = $row['VideoCountry'];
-    $videoLink = $row['VideoLink'];
-    $videoImage = $row['VideoImage'];
-    $videoInfo ='';
-    
-    if ($counter == 0)
-    {
-        $indicators .='<li data-target="#video-carousel" data-slide-to="'.$counter.'" class="active"></li>';
-        $videoInfo = $videoTitle."|".$videoCreator."|".$videoSchool."|".$videoCountry;
-        $slides .= 
-        '
-        <div class="carousel-item col-md-4 p-4 active" id="'.$videoInfo.'">
-            <a href="'.$videoLink.'" target="youtube-player"
-            onclick="getInfo(\''.$videoInfo.'\');"  >
-                <img class="img-fluid mx-auto d-block" src="content/images/2017Video/'.$videoImage.'" />
-            </a>
-            <div class="carousel-caption">
-                <p class="carousel-title">'.$videoTitle.'</p>  
-            </div>
-        </div>';
-    }
-    else
-    {
-        $indicators .='<li data-target="#video-carousel" data-slide-to="'.$counter.'"></li>';
-        $videoInfo = $videoTitle."|".$videoCreator."|".$videoSchool."|".$videoCountry;
-        $slides .= 
-        '<div class="carousel-item col-md-4 p-4" id="'.$videoInfo.'">
-            <a href="'.$videoLink.'" target="youtube-player" onclick="getInfo(\''.$videoInfo.'\');"   >
-                <img class="img-fluid mx-auto d-block" src="content/images/2017Video/'.$videoImage.'" />
-            </a>
-            <div class="carousel-caption">
-                <p class="carousel-title">'.$videoTitle.'</p>
-            </div>
-        </div>';
-    }
-    $counter++;
-}
-
-?>
-    
-<body class="videos">
+<body id="index">
     <!--Header-->
     <nav class="navbar navbar-expand-lg navbar-toggleable-md fixed-top">
         <div class="container">
@@ -168,34 +101,7 @@ while($row=mysqli_fetch_array($result))
         </div>
     </nav>
     <!--Page Contents-->
-    <div class="container-fluid col-10 col-md-9 col-lg-8 page-contents p-4">
-        <h1 class="content-title text-center text-md-left mx-1 pb-3">2017 Videos</h1>
-        <div class="row video-player mx-1 mb-4">
-            <div class="embed-responsive embed-responsive-16by9 col-12 col-md-8 mb-4 mb-md-0">
-                <!--FEATURED VIDEO-->
-                <iframe name="youtube-player" class="embed-responsive-item" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <!--FEATURED VIDEO DETAILS-->
-            <div class="video-info col-12 col-md-4 mt-3">
-                <p class="videoTitle" id="videoTitle"></p>
-                <p class="videoCreator" id="videoCreator"></p>
-                <p class="videoSchool" id="videoSchool"></p>
-                <p class="videoCountry" id="videoCountry"></p>
-            </div>
-        </div>
-        <!--Carousel-->
-        <div id="video-carousel" class="row mx-1 carousel slide" data-ride="carousel">
-            <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                <?php echo $slides; ?>
-            </div>
-            <a class="carousel-control-prev" href="#video-carousel" role="button" data-slide="prev">
-                 <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#video-carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-    </div>
+    
     <!--Footer-->
     <footer id="footer">
         <div class="container-fluid">
@@ -279,7 +185,6 @@ while($row=mysqli_fetch_array($result))
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script>
-    
     $('.dropdown').hover(function(){
         $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
         }, function() {
@@ -289,59 +194,6 @@ while($row=mysqli_fetch_array($result))
     $('.dropdown .nav-link').click(function(){
         location.href = this.href;
     });
-    
 </script>
-<script>
-    //Carousel
-    
-    $('#video-carousel').on('slide.bs.carousel', function (e) {
-
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 3;
-    var totalItems = $('.carousel-item').length;
-    
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('.carousel-item').eq(i).appendTo('.carousel-inner');
-            }
-            else {
-                $('.carousel-item').eq(0).appendTo('.carousel-inner');
-            }
-        }
-    }
-});
-    
-    $('.carousel-caption').hide();
-    
-    $('.carousel-item, .carousel-control-next, .carousel-control-prev').hover(function(){
-        $('.carousel-caption').stop(true, true).fadeIn(500);
-        }, function() {
-        $('.carousel-caption').stop(true, true).fadeOut(500);
-    });
-</script>
-<script>
-    //Video-info
-    
-    function getInfo(videoInfo)
-    {
-        var infoField = videoInfo.split("|");
-        
-        var videoTitle = infoField[0];
-        var videoCreator = infoField[1];
-        var videoSchool = infoField[2];
-        var videoCountry = infoField[3];
-        
-        document.getElementById("videoTitle").textContent = videoTitle;
-        document.getElementById("videoCreator").textContent= videoCreator;
-        document.getElementById("videoSchool").textContent = videoSchool;
-        document.getElementById("videoCountry").textContent = videoCountry;
-    }
-    
-</script>
-
 </body>
 </html>
