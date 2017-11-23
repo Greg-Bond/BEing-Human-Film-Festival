@@ -41,13 +41,13 @@
                             <a class="nav-link px-3 py-2" href="index.php">Home</a>
                         </li>
                         <li class="dropdown d-none d-lg-block d-xl-block"><!--Dropdown menu-->
-                            <a class="px-3 py-2 nav-link dropdown-toggle active" href="about.html" data-toggle="dropdown">About</a>
+                            <a class="px-3 py-2 nav-link dropdown-toggle" href="about.html" data-toggle="dropdown">About</a>
                             <div class="dropdown-menu m-0">
                                 <a class="dropdown-item" href="contact.html">Contact Us</a>
                             </div>
                         </li>
                         <li class="d-lg-none d-xl-none "><!--Dropdown menu when collapsed-->
-                            <a class="navbar-item px-3 nav-link active" href="about.html">About</a>
+                            <a class="navbar-item px-3 nav-link" href="about.html">About</a>
                             <ul class="nav-list">
                                 <li class="navbar-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             </ul>
