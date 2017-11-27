@@ -2,9 +2,13 @@
 /* CSS Stylesheet */
 
 html{
-    font-family: 'Roboto', sans-serif;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #414141;
+ 
+}
 /* Background Colours */
 
 #index{
@@ -24,15 +28,12 @@ html{
     background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#sponsors{
-    
+#charities{
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#charities{
-    background-color: #00c3ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 .videos{
     background-color: #8e27f5;  /* fallback for old browsers */
@@ -40,14 +41,17 @@ html{
     background: linear-gradient(to right, #8e27f5, #4abce1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.news{
+#sponsors{
     background-color: #FF5F6D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .admin{
-    background-color: red;
+    background: #2BC0E4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* Header */
@@ -129,7 +133,99 @@ button{
 	border:none;
 }
 
+/* Hero */
 
+.home-title{
+    font-size: 3.2em;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.home-subtitle{
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-top: 5rem;
+}
+
+.home-body{
+}
+
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+    .home-title{
+        font-size: 2em;
+    }
+    
+    .home-subtitle{
+        padding-top: 1.2rem;
+    }
+    
+    .home-body{
+        padding-top: 1.2rem;
+    }
+}
+
+/* Homepage quick links */
+
+.quick-links{
+    background: #ff6a00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+
+}
+
+.linkgroup{
+    opacity: 0;
+}
+
+.link-button{
+    background-color: #fff;
+    width: 190px;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+
+
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+    .quick-links{
+        padding: none;
+    }
+    .link-button{
+        margin-top 15px;
+        margin-bottom: 15px;
+    }
+    
+    .linkgroup{
+        opacity: 1;
+    }
+    
+}
+
+.link-button:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* Sponsor Box */
+
+.sponsorbox{
+    position: relative;
+    opacity: 0;
+}
+
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+    .sponsorbox{
+        opacity: 1;
+    }
+}
 /* Page Contents */
 
 .page-contents{
@@ -154,8 +250,8 @@ button{
 	background-color:#414141;
 	color:white;
 	width:100%;
-	position:absolute;
 	overflow:auto;
+    clear: both;
 }
 
 

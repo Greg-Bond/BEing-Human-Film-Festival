@@ -145,7 +145,7 @@ while($row=mysqli_fetch_array($result))
                     <li class="dropdown d-none d-lg-block d-xl-block"><!--Dropdown menu-->
                         <a class="px-3 py-2 nav-link dropdown-toggle active" href="2018-videos.php" data-toggle="dropdown">Videos</a>
                         <div class="dropdown-menu m-0">
-                            <a class="dropdown-item active" href="2017-videos.php">2017 Videos</a>
+                            <a class="dropdown-item" href="2017-videos.php">2017 Videos</a>
                         </div>
                     </li>
                     <li class="d-lg-none d-xl-none "><!--Dropdown menu when collapsed-->
