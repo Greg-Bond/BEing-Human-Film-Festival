@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>2017 Videos | BEing Human Film Festival</title>
+    <title>2018 Videos | BEing Human Film Festival</title>
     
     <!--Favicon-->
     <link rel="icon" type="image/png" href="content/images/BHico.png" sizes="16x16">
@@ -16,8 +16,8 @@
     <meta name="description" content="">
     <!--Open Graph Data-->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.beinghumanfilmfestival.com/2017-videos/">
-    <meta property="og:title" content="2017 Videos | BEing Human Film Festival">
+    <meta property="og:url" content="http://www.beinghumanfilmfestival.com/2018-videos/">
+    <meta property="og:title" content="2018 Videos | BEing Human Film Festival">
     <meta property="og:image" content="content/images/BHFFog.jpg">
     <meta property="og:description" content="">
     <!--Google Fonts-->
@@ -38,7 +38,7 @@
     
 include_once ('php/connection.php');
 
-$sql = "select * from videos where VideoYear = 2017";
+$sql = "select * from videos where VideoYear = 2018";
 $result = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($result);
 
@@ -143,15 +143,15 @@ while($row=mysqli_fetch_array($result))
                         <a class="nav-link px-3 py-2" href="charities.html">Charities</a>
                     </li>
                     <li class="dropdown d-none d-lg-block d-xl-block"><!--Dropdown menu-->
-                        <a class="px-3 py-2 nav-link dropdown-toggle" href="2018-videos.php" data-toggle="dropdown">Videos</a>
+                        <a class="px-3 py-2 nav-link dropdown-toggle active" href="2018-videos.php" data-toggle="dropdown">Videos</a>
                         <div class="dropdown-menu m-0">
                             <a class="dropdown-item active" href="2017-videos.php">2017 Videos</a>
                         </div>
                     </li>
                     <li class="d-lg-none d-xl-none "><!--Dropdown menu when collapsed-->
-                        <a class="navbar-item px-3 nav-link" href="2018-videos.php">Videos</a>
+                        <a class="navbar-item px-3 nav-link active" href="2018-videos.php">Videos</a>
                         <ul class="nav-list">
-                            <li class="navbar-item"><a class="nav-link active" href="2017-videos.php">2017 Videos</a></li>
+                            <li class="navbar-item"><a class="nav-link" href="2017-videos.php">2017 Videos</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -169,7 +169,13 @@ while($row=mysqli_fetch_array($result))
     </nav>
     <!--Page Contents-->
     <div class="container-fluid col-10 col-md-9 col-lg-8 page-contents p-4">
-        <h1 class="content-title text-center text-md-left mx-1 pb-3">2017 Videos</h1>
+        <!--PLACEHOLDER-->        
+        <h1 class="content-title text-center text-md-left mx-1 pb-3">2018 Videos</h1>
+        <!--Delete section when video entries are closed START-->
+        <h1 class="placeholder">COMING SOON</h1>
+        
+        <!--END delete section-->
+
         <div class="row video-player mx-1 mb-4">
             <div class="embed-responsive embed-responsive-16by9 col-12 col-md-8 mb-4 mb-md-0">
                 <!--FEATURED VIDEO-->
