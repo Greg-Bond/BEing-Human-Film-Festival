@@ -31,6 +31,19 @@
     <!--CSS-->
     <link rel="stylesheet"	type="text/css"	href="css/styles.css">
 </head>
+<?php
+    
+    include_once ('php/connection.php');
+
+    $sql = "select * from homepageContent where ContentID = 1";
+    $result = mysqli_query($conn,$sql);
+    $row = mysqli_fetch_array($result);
+    
+    $contentTitle = $row['ContentTitle'];
+    $contentSubtitle = $row['ContentSubtitle'];
+    $contentBody = $row['ContentBody'];
+    
+?>
 <body id="index">
     <!--Header-->
     <nav class="navbar navbar-expand-lg navbar-toggleable-md fixed-top">
@@ -101,7 +114,56 @@
         </div>
     </nav>
     <!--Page Contents-->
-    
+    <div class="hero">
+        <div class="hero-video d-none d-lg-block d-md-block mb-0">
+            <video class="w-100" id="" autoplay loop>
+                <source src="content/video/BHFFvideohero.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-image d-sm-block s-xs-block d-md-none">
+            <img class="w-100" src="content/images/BHFFhero.jpg">
+        </div>
+    </div>
+    <div class="container home-content col-10 col-md-9 col-lg-8 py-5">
+        <div class="row">
+            <div class="col-12 col-sm-5 col-md-4">
+                <div>
+                    <h1 class="home-title text-center text-sm-right pr-1"><?php echo $contentTitle; ?></h1>
+                </div>
+                <div>
+                    <h3 class="text-center text-sm-right home-subtitle"><?php echo $contentSubtitle; ?></h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-7">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="home-body pl-1"><?php echo $contentBody; ?></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center quick-links">
+            <div class="linkgroup">
+                <a href="registration.html"><button type="button" class="link-button btn p-3 mx-3">How To Enter</button></a>
+                <a href="judges-register.html"><button type="button" class="link-button btn p-3 mx-3">Become A Judge</button></a>
+                <a href="2018-videos.php"><button type="button" class="link-button btn p-3 mx-3">Videos</button></a>
+                <a href="guidelines.html"><button type="button" class="link-button btn p-3 mx-3">Resources</button></a>
+            </div>            
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center my-5 sponsorbox">
+            <img class="img-fluid mx-4" src="content/images/JMC.gif">
+            <img class="img-fluid mx-4" src="content/images/SSFS.gif">
+            <img class="img-fluid mx-4" src="content/images/LJHooker.gif">
+            <img class="img-fluid mx-4" src="content/images/GreenAve.gif">
+            <img class="img-fluid mx-4" src="content/images/Dendy.gif">
+            <img class="img-fluid mx-4" src="content/images/PalaceCinemas.gif">
+            <img class="img-fluid mx-4" src="content/images/DaVinci.gif">
+        </div>        
+    </div>           
     <!--Footer-->
     <footer id="footer">
         <div class="container-fluid">
@@ -184,6 +246,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="js/backgroundVideo.js"></script>
 <script>
     $('.dropdown').hover(function(){
         $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
@@ -194,6 +257,35 @@
     $('.dropdown .nav-link').click(function(){
         location.href = this.href;
     });
+    
+        $('.sponsorbox').css({top: 50});
+
+    
+    $(window).scroll( function(){    
+        $('.linkgroup').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if( bottom_of_window > bottom_of_object ){
+                $(this).animate({opacity: 1},900);
+            }            
+        });
+    });
+
+
+    
+    $(window).scroll( function(){    
+        $('.sponsorbox').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if( bottom_of_window > bottom_of_object ){
+                $(this).animate({top: 0, opacity: 1},900);
+            }            
+        });
+    });
+    
+
+
+
 </script>
 </body>
 </html>

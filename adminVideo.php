@@ -169,14 +169,14 @@
                         print "<h4 class='mt-2'>List of Video Entries</h4>";
                         print "<thead>";
                         print "<tr>";
-                        print "<th class='p-1'>Video ID <br />(Click ID to fill form)</td>";
-                        print "<th class='p-1'>Video Title</td>";
-                        print "<th class='p-1'>Video Creator</td>";
-                        print "<th class='p-1'>Video School</td>";
-                        print "<th class='p-1'>Video Country</td>";
-                        print "<th class='p-1'>YouTube embed link</td>";
-                        print "<th class='p-1'>Video Image</td>";
-                        print "<th class='p-1'>Video Year</td>";
+                        print "<th class='p-1'>Video ID <br />(Click ID to fill form)</th>";
+                        print "<th class='p-1'>Video Title</th>";
+                        print "<th class='p-1'>Video Creator</th>";
+                        print "<th class='p-1'>Video School</th>";
+                        print "<th class='p-1'>Video Country</th>";
+                        print "<th class='p-1'>YouTube embed link</th>";
+                        print "<th class='p-1'>Video Image</th>";
+                        print "<th class='p-1'>Video Year</th>";
                         print "</tr>";
                         print "</thead>";
 

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-        <title>Login Control Panel | BEing Human Film Festival</title>
+        <title>Homepage Content Control Panel | BEing Human Film Festival</title>
     
         <!--Favicon-->
         <link rel="icon" type="image/png" href="content/images/BHico.png" sizes="16x16">
@@ -20,6 +20,7 @@
         <link rel="stylesheet"	type="text/css"	href="css/styles.css">
     </head>
     <?php
+    
         session_start();
         error_reporting(0);
 
@@ -100,52 +101,53 @@
         <!--Page Contents-->
         <div class="container-fluid col-10 col-md-9 col-lg-8 page-contents p-4">
             <a href="adminDashboard.html"><button type="button" class="btn mt-2 mb-4">Back</button></a>
-            <h1>Login Control Panel</h1>
+            <h1>Homepage Content Panel</h1>
             <div class="error-message mt-4">
-                <h5 class="text-danger">
-                    <?php
-                        if(isset($_SESSION['message']))
-                        {
+                    <h5 class="text-danger">
+                        <?php
+                            if(isset($_SESSION['message']))
+                            {
                             echo $_SESSION['message'];
                             unset ($_SESSION['message']);
-                        }
-                    ?>
-                </h5>
-            </div>
-            <form class="w-75 mt-4" method="post" action="<?php echo htmlspecialchars ('php/adminLoginProcessing.php');?>">
+                            }
+                        ?>
+                    </h5>
+                </div>
+            <form class="w-75 mt-4" method="post" action="<?php echo htmlspecialchars ('php/adminContentProcessing.php');?>">
                 <div class="form-group mt-2">
-                    <label for="formUsername">Username:</label>
-                    <input type="text" class="form-control" id="formUsername" name="username" value="<?php if (isset($_SESSION['username'])) print $_SESSION['username'];?>" />
+                    <label for="formContentTitle">Title:</label>
+                    <input type="text" class="form-control" id="formContentTitle" name="contentTitle" value="<?php if (isset($_SESSION['contentTitle'])) print $_SESSION['contentTitle'];?>" />
                 </div>
                 <div class="form-group mt-2">
-                    <label for="formPassword">Password:</label>
-                    <input type="password" class="form-control" id="formPassword" name="password" value="<?php if (isset($_SESSION['password'])) print $_SESSION['password'];?>" />
+                    <label for="formContentSubtitle">Subtitle: (side panel)</label>
+                    <input type="text" class="form-control" id="formContentSubtitle" name="contentSubtitle" value="<?php if (isset($_SESSION['contentSubtitle'])) print $_SESSION['contentSubtitle'];?>" />
+                    <small id="imageHelp" class="form-text text-muted">Optional</small>
                 </div>
                 <div class="form-group mt-2">
-                    <label for="formAdminID">Admin ID:</label>
-                    <input type="text" class="form-control" id="formAdminID" name="adminID" value="<?php if (isset($_SESSION['adminID'])) print $_SESSION['adminID'];?>" />
-                    <small id="imageHelp" class="form-text text-muted">ONLY USE THIS FIELD FOR "DELETE" AND "UPDATE", LEAVE EMPTY FOR "ADD"</small>
+                    <label for="formContentBody">Content:</label>
+                    <small id="imageHelp" class="form-text text-muted">&lt;p&gt; &#61; Paragraph, &lt;b&gt; &#61; Bold, &lt;i&gt; &#61; Italic, &lt;br /&gt; Next line, &lt;a href="  "&gt; Link</small>
+                    <textarea class="form-control" rows="20" id="formContentBody" name="contentBody" ><?php if (isset($_SESSION['contentBody'])) print $_SESSION['contentBody'];?></textarea>
                 </div>
                 <div class="submit-buttons mt-4">
-                    <input class="mx-2" type="Submit" name="add" value="Add">
-                    <input class="mx-2" type="Submit" name="delete" value="Delete">
                     <input class="mx-2" type="Submit" name="update" value="Update">
                 </div>
             </form>
-            <form class="w-75 view-all mt-2" method="post" action="<?php echo htmlspecialchars ($_SERVER['PHP_SELF']);?>">
-                <input class="mx-2 bg-primary text-white" type="Submit" name="viewAll" value="View All">
+            <form class="w-100 view-all mt-2" method="post" action="<?php echo htmlspecialchars ($_SERVER['PHP_SELF']);?>">
+                <input class="mx-2 bg-primary text-white" type="Submit" name="viewAll" value="Current Homepage Content">
                 <?php
                     if(isset($_POST{'viewAll'}))
                     {
-                        $sql = "select * from login";
+                        $sql = "select * from homepageContent";
                         $result = mysqli_query ($conn, $sql);
 
                         print "<table border='1' class='table mt-2'>";
                         print "<h4 class='mt-2'>List of Users</h4>";
                         print "<thead>";
                         print "<tr>";
-                        print "<th class='p-1'>Admin ID (Click ID to fill form)</th>";
-                        print "<th class='p-1'>Username</th>";
+                        print "<th class='p-1'>Content ID (Click to fill form)</th>";
+                        print "<th class='p-1'>Content Title</th>";
+                        print "<th class='p-1'>Content Subtitle *Optional</th>";
+                        print "<th class='p-1'>Content Body</th>";                        
                         print "</tr>";
                         print "</thead>";
 
@@ -153,8 +155,10 @@
                         {
                             print"<tbody>";
                             print"<tr>";
-                            print"<td class='p-1'><a href='php/adminLoginProcessing.php?adminID=$row[0]'>$row[0]</a></td>";
+                            print"<td class='p-1'><a href='php/adminContentProcessing.php?contentID=$row[0]'>$row[0]</a></td>";
                             print"<td class='p-1'>$row[1]</td>";
+                            print"<td class='p-1'>$row[2]</td>";
+                            print"<td class='p-1'>$row[3]</td>";
                             print "</tr>";
                             print"</tbody>";
                         }
