@@ -145,7 +145,7 @@
     </div>
     <div class="container-fluid">
         <div class="row d-flex justify-content-center quick-links">
-            <div class="linkgroup">
+            <div class="linkgroup my-3">
                 <a href="registration.html"><button type="button" class="link-button btn p-3 mx-3">How To Enter</button></a>
                 <a href="judges-register.html"><button type="button" class="link-button btn p-3 mx-3">Become A Judge</button></a>
                 <a href="2018-videos.php"><button type="button" class="link-button btn p-3 mx-3">Videos</button></a>
@@ -155,13 +155,13 @@
     </div>
     <div class="container-fluid">
         <div class="row d-flex justify-content-center my-5 sponsorbox">
-            <img class="img-fluid mx-4" src="content/images/JMC.gif">
-            <img class="img-fluid mx-4" src="content/images/SSFS.gif">
-            <img class="img-fluid mx-4" src="content/images/LJHooker.gif">
-            <img class="img-fluid mx-4" src="content/images/GreenAve.gif">
-            <img class="img-fluid mx-4" src="content/images/Dendy.gif">
-            <img class="img-fluid mx-4" src="content/images/PalaceCinemas.gif">
-            <img class="img-fluid mx-4" src="content/images/DaVinci.gif">
+            <img class="img-fluid mx-4 py-4" src="content/images/JMC.gif">
+            <img class="img-fluid mx-4 py-4" src="content/images/SSFS.gif">
+            <img class="img-fluid mx-4 py-4" src="content/images/LJHooker.gif">
+            <img class="img-fluid mx-4 py-4" src="content/images/GreenAve.gif">
+            <img class="img-fluid mx-4 py-4" src="content/images/Dendy.gif">
+            <img class="img-fluid mx-4 py-4" src="content/images/PalaceCinemas.gif">
+            <img class="img-fluid mx-4 py-4" src="content/images/DaVinci.gif">
         </div>        
     </div>           
     <!--Footer-->
