@@ -116,54 +116,61 @@
     <!--Page Contents-->
     <div class="hero">
         <div class="hero-video d-none d-lg-block d-md-block mb-0">
-            <video class="w-100" id="" autoplay loop>
+            <video class="" id="" autoplay loop>
                 <source src="content/video/BHFFvideohero.mp4" type="video/mp4">
             </video>
         </div>
         <div class="hero-image d-sm-block s-xs-block d-md-none">
-            <img class="w-100" src="content/images/BHFFhero.jpg">
+            <img src="content/images/BHFFhero.jpg">
         </div>
     </div>
-    <div class="container home-content col-10 col-md-9 col-lg-8 py-5">
-        <div class="row">
-            <div class="col-12 col-sm-5 col-md-4">
-                <div>
-                    <h1 class="home-title text-center text-sm-right pr-1"><?php echo $contentTitle; ?></h1>
+    <div class="index">
+        <div class="container-fluid col-10 col-md-9 col-lg-8 py-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-5 col-md-4">
+                    <div>
+                        <h1 class="home-title text-center text-sm-right pr-1"><?php echo $contentTitle; ?></h1>
+                    </div>
+                    <div class="dash">
+                        <img src="content/images/dashedborder-rego%20v2.svg" class="slideRight" alt="dashed underline" height="15" width="165"> 
+                    </div>
+                    <div>
+                        <h3 class="text-center text-sm-right home-subtitle"><?php echo $contentSubtitle; ?></h3>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-center text-sm-right home-subtitle"><?php echo $contentSubtitle; ?></h3>
-                </div>
-            </div>
-            <div class="col-12 col-sm-7">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="home-body pl-1"><?php echo $contentBody; ?></div>
+                <div class="col-12 col-sm-7">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="home-body pl-1"><?php echo $contentBody; ?></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row d-flex justify-content-center quick-links">
-            <div class="linkgroup my-3">
-                <a href="registration.html"><button type="button" class="link-button btn p-3 mx-3">How To Enter</button></a>
-                <a href="judges-register.html"><button type="button" class="link-button btn p-3 mx-3">Become A Judge</button></a>
-                <a href="2018-videos.php"><button type="button" class="link-button btn p-3 mx-3">Videos</button></a>
-                <a href="guidelines.html"><button type="button" class="link-button btn p-3 mx-3">Resources</button></a>
-            </div>            
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center quick-links">
+                <div class="linkgroup my-3">
+                    <a href="registration.html"><button type="button" class="link-button btn p-3 mx-3">How To Enter</button></a>
+                    <a href="judges-register.html"><button type="button" class="link-button btn p-3 mx-3">Become A Judge</button></a>
+                    <a href="2018-videos.php"><button type="button" class="link-button btn p-3 mx-3">Videos</button></a>
+                    <a href="guidelines.html"><button type="button" class="link-button btn p-3 mx-3">Resources</button></a>
+                </div>            
+            </div>
         </div>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center pt-3 pb-5 sponsorbox">
+                <a target="_blank" href="http://www.jmcacademy.edu.au/"><img class="img-fluid mx-4 py-4" src="content/images/JMC.gif"></a>
+                <a target="_blank" href="http://www.sydneyshortfilmschool.com/"><img class="img-fluid mx-4 py-4" src="content/images/SSFS.gif"></a>
+                <a target="_blank" href="https://canterbury.ljhooker.com.au/"><img class="img-fluid mx-4 py-4" src="content/images/LJHooker.gif"></a>
+                <a target="_blank" href="https://www.greenavenue.com.au/"><img class="img-fluid mx-4 py-4" src="content/images/GreenAve.gif"></a>
+                <a target="_blank" href="https://www.dendy.com.au/"><img class="img-fluid mx-4 py-4" src="content/images/Dendy.gif"></a>
+                <a target="_blank" href="https://www.palacecinemas.com.au/"><img class="img-fluid mx-4 py-4" src="content/images/PalaceCinemas.gif"></a>
+                <a target="_blank" href="#"><img class="img-fluid mx-4 py-4" src="content/images/DaVinci.gif"></a>
+            </div>        
+        </div>   
     </div>
-    <div class="container-fluid">
-        <div class="row d-flex justify-content-center my-5 sponsorbox">
-            <img class="img-fluid mx-4 py-4" src="content/images/JMC.gif">
-            <img class="img-fluid mx-4 py-4" src="content/images/SSFS.gif">
-            <img class="img-fluid mx-4 py-4" src="content/images/LJHooker.gif">
-            <img class="img-fluid mx-4 py-4" src="content/images/GreenAve.gif">
-            <img class="img-fluid mx-4 py-4" src="content/images/Dendy.gif">
-            <img class="img-fluid mx-4 py-4" src="content/images/PalaceCinemas.gif">
-            <img class="img-fluid mx-4 py-4" src="content/images/DaVinci.gif">
-        </div>        
-    </div>           
+    
+            
     <!--Footer-->
     <footer id="footer">
         <div class="container-fluid">

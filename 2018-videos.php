@@ -169,12 +169,28 @@ while($row=mysqli_fetch_array($result))
     </nav>
     <!--Page Contents-->
     <div class="container-fluid col-10 col-md-9 col-lg-8 page-contents p-4">
-        <!--PLACEHOLDER-->        
-        <h1 class="content-title text-center text-md-left mx-1 pb-3">2018 Videos</h1>
-        <!--Delete section when video entries are closed START-->
-        <h1 class="placeholder">COMING SOON</h1>
-        
-        <!--END delete section-->
+        <div class="top-buttons">
+            <a href="2017-videos.php" class="pagebuttons-video">BHFF 2017 Entries</a>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4"><!-- Heading column -->
+                <div>
+                    <h1 class="content-title">2018 Videos</h1>
+                </div>                
+                <div class="dash">
+                    <img src="content/images/dashedborder-rego%20v2.svg" class="slideRight" alt="dashed underline" height="15" width="165"> 
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8"><!-- Body Column -->
+                <div class="row">
+                    <div class="col-12">
+                        <!--Delete section when video entries are closed START-->
+                        <h1 class="placeholder">COMING SOON</h1>        
+                        <!--END delete section-->
+                    </div>
+                </div>
+            </div><!-- Main body -->
+        </div><!-- main row -->
 
         <div class="row video-player mx-1 mb-4">
             <div class="embed-responsive embed-responsive-16by9 col-12 col-md-8 mb-4 mb-md-0">

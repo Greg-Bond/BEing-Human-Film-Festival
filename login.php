@@ -120,7 +120,7 @@ error_reporting(0);
                                         <label class="sr-only" for="password">Password</label>
                                         <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password">
                                     </div>
-                                    <button type="submit" name="submit" class="btn">Sign in</button>
+                                    <button type="submit" name="submit" class="btn btn-primary">Sign in</button>
                                 </form>
                             </div>
                             <div class="error-message mt-4">

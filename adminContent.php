@@ -100,7 +100,7 @@
         </nav>
         <!--Page Contents-->
         <div class="container-fluid col-10 col-md-9 col-lg-8 page-contents p-4">
-            <a href="adminDashboard.html"><button type="button" class="btn mt-2 mb-4">Back</button></a>
+            <a href="adminDashboard.html"><button type="button" class="btn btn-primary mt-2 mb-4">Back</button></a>
             <h1>Homepage Content Panel</h1>
             <div class="error-message mt-4">
                     <h5 class="text-danger">
