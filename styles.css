@@ -245,17 +245,7 @@ button{
     
 }
 
-.dash{
-    text-align:right;
-}
 
-@media (max-width: 767px) 
-{
-    .dash {
-    text-align:center;  
-    }
-    
-}
 
 /* page-subheading */
 .page-subheading{
@@ -374,6 +364,7 @@ text-align: center;
 
 .videoTitle{
     font-size: 1.5em;
+    font-weight: 800;
 }
 
 .videoCreator{
@@ -476,7 +467,20 @@ li.dash-bullet:before {
 }
 
 
-/* Slide Right animation */
+/* Slide Right Dash animation */
+.dash{
+    text-align:right;
+}
+
+@media (max-width: 767px) 
+{
+    .dash {
+    text-align:center;  
+    }
+    
+}
+
+
 .slideRight{
 	animation-name: slideRight;
 	-webkit-animation-name: slideRight;	
@@ -486,7 +490,7 @@ li.dash-bullet:before {
 	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
+	-webkit-animation-timing-function: ease-in-out;
 
 		
 }

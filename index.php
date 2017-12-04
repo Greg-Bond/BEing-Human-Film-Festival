@@ -149,12 +149,39 @@
         </div>
         <div class="container-fluid">
             <div class="row d-flex justify-content-center quick-links">
-                <div class="linkgroup my-3">
-                    <a href="registration.html"><button type="button" class="link-button btn p-3 mx-3">How To Enter</button></a>
-                    <a href="judges-register.html"><button type="button" class="link-button btn p-3 mx-3">Become A Judge</button></a>
-                    <a href="2018-videos.php"><button type="button" class="link-button btn p-3 mx-3">Videos</button></a>
-                    <a href="guidelines.html"><button type="button" class="link-button btn p-3 mx-3">Resources</button></a>
-                </div>            
+                <!--Quicklinks lg display-->
+                <div class="linkgroup my-3 btn-group d-none d-lg-block">
+                    <a href="registration.html"><button type="button" class="link-button btn p-3 m-3">How To Enter</button></a>
+                    <a href="judges-register.html"><button type="button" class="link-button btn p-3 m-3">Become A Judge</button></a>
+                    <a href="2018-videos.php"><button type="button" class="link-button btn p-3 m-3">Videos</button></a>
+                    <a href="guidelines.html"><button type="button" class="link-button btn p-3 m-3">Resources</button></a>
+                </div>
+                <!--Quicklinks md display-->
+                <div class="linkgroup my-3 d-none d-md-block d-lg-none">
+                    <div class="row">
+                        <a href="registration.html"><button type="button" class="link-button btn p-3 m-3">How To Enter</button></a>
+                        <a href="judges-register.html"><button type="button" class="link-button btn p-3 m-3">Become A Judge</button></a>
+                    </div>
+                    <div class="row">
+                        <a href="2018-videos.php"><button type="button" class="link-button btn p-3 m-3">Videos</button></a>
+                        <a href="guidelines.html"><button type="button" class="link-button btn p-3 m-3">Resources</button></a>
+                    </div>
+                </div>
+                <!--Quicklinks sm display-->
+                 <div class="linkgroup my-3 d-md-none">
+                     <div class="row">
+                        <a href="registration.html"><button type="button" class="link-button btn p-3 m-3">How To Enter</button></a>
+                     </div>
+                     <div class="row">
+                        <a href="judges-register.html"><button type="button" class="link-button btn p-3 m-3">Become A Judge</button></a>
+                     </div>
+                     <div class="row">
+                         <a href="2018-videos.php"><button type="button" class="link-button btn p-3 m-3">Videos</button></a>
+                     </div>
+                     <div class="row">
+                         <a href="guidelines.html"><button type="button" class="link-button btn p-3 m-3">Resources</button></a>
+                     </div>
+                </div>
             </div>
         </div>
         <div class="container-fluid">
