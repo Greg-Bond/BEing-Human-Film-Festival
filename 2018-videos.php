@@ -157,8 +157,8 @@ while($row=mysqli_fetch_array($result))
                 </ul>
             </div>
             <div class="social-media navbar-brand mx-auto mb-0">
-            	<a href="#"><img class="icon" src="content/images/Youtube_circle_colour.png" /></a>
-                <a href="#"><img class="icon" src="content/images/Facebook_circle_colour.png" /></a>
+            	<a target="_blank" href="https://www.youtube.com/channel/UCyB2dBvrMTHzn6MvhH_cceg/featured"><img class="icon" src="content/images/Youtube_circle_colour.png" /></a>
+                <a target="_blank" href="https://www.facebook.com/Being-Human-Film-Festival-719578074898975/"><img class="icon" src="content/images/Facebook_circle_colour.png" /></a>
                 <a href="#"><img class="icon" src="content/images/Instagram_circle_colour.png" /></a>
                 <a href="#"><img class="icon" src="content/images/Twitter_circle_color.png" /></a>
 		<p class="hashtag d-inline d-lg-none d-xl-none mb-0">#bhff2018</p><!--For xs to md-->
@@ -168,31 +168,29 @@ while($row=mysqli_fetch_array($result))
         </div>
     </nav>
     <!--Page Contents-->
-    <div class="container-fluid col-10 col-md-9 col-lg-8 page-contents p-4">
+    <div class="container-fluid col-10 col-lg-8 page-contents">
         <div class="top-buttons">
-            <a href="2017-videos.php" class="pagebuttons-video">BHFF 2017 Entries</a>
+            <a href="2017-videos.php" class="pagebuttons">BHFF 2017 Entries</a>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-4"><!-- Heading column -->
-                <div>
-                    <h1 class="content-title">2018 Videos</h1>
-                </div>                
-                <div class="dash">
-                    <img src="content/images/dashedborder-rego%20v2.svg" class="slideRight" alt="dashed underline" height="15" width="165"> 
+            <div class="col-6"><!-- Heading column -->
+                <div class="title-wrap ml-3">
+                    <h1 class="content-title mb-0">2018 Videos</h1>
+                    <img src="content/images/dashedborder-rego%20v2.svg" class="slideRight dash-vid" alt="dashed underline" height="10" width="110">
                 </div>
             </div>
-            <div class="col-sm-12 col-md-8"><!-- Body Column -->
-                <div class="row">
-                    <div class="col-12">
-                        <!--Delete section when video entries are closed START-->
-                        <h1 class="placeholder">COMING SOON</h1>        
-                        <!--END delete section-->
-                    </div>
-                </div>
-            </div><!-- Main body -->
         </div><!-- main row -->
-
-        <div class="row video-player mx-1 mb-4">
+        
+        <!--Delete section when entries are uploaded START DELETE SECTION-->
+        <div class="row">
+            <div class="col-6 pt-4 ml-3">
+                <h2 class="placeholder">COMING SOON</h2> 
+                <p><a href="2017-videos.php">View BHFF 2017 entries</a></p>
+            </div>
+        </div>
+        <!--END DELETE SECTION-->
+        
+        <div class="row video-player mx-1 my-4">
             <div class="embed-responsive embed-responsive-16by9 col-12 col-md-8 mb-4 mb-md-0">
                 <!--FEATURED VIDEO-->
                 <iframe name="youtube-player" class="embed-responsive-item" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
@@ -279,8 +277,8 @@ while($row=mysqli_fetch_array($result))
                 </div>
 				<div class="col-sm-2 cols">
 				<div class="social-networks">
-					<a target="_blank" href="#"><img class="footer-icon" src="content/images/Youtube_circle_bw.png"></a>
-					<a target="_blank" href="#"><img class="footer-icon" src="content/images/Facebook_circle_bw.png"></a>
+					<a target="_blank" href="https://www.youtube.com/channel/UCyB2dBvrMTHzn6MvhH_cceg/featured"><img class="footer-icon" src="content/images/Youtube_circle_bw.png"></a>
+					<a target="_blank" href="https://www.facebook.com/Being-Human-Film-Festival-719578074898975/"><img class="footer-icon" src="content/images/Facebook_circle_bw.png"></a>
 					<a target="_blank" href="#"><img class="footer-icon" src="content/images/Instagram_circle_bw.png"></a>
 					<a target="_blank" href="#"><img class="footer-icon" src="content/images/Twitter_circle_bw.png"></a>
 					<p class="hashtag d-inline align-middle">#bhff2018</p>

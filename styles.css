@@ -70,6 +70,7 @@ body{
     height: 57px;
 }
 
+
 .icon{
     height: 25px;
     margin: 3px;
@@ -77,6 +78,15 @@ body{
 
 .hashtag{
     font-size: 17px;
+}
+
+@media (max-width: 767px) 
+{
+    .navbar-brand
+    {
+    margin-left:auto;
+    margin-right:auto;
+    }
 }
 
 .nav-link{
@@ -122,14 +132,6 @@ body{
     color:#414141;
 }
 
-@media (max-width: 767px) /* @grid-float-breakpoint -1 */
-{
-    .fixed-top
-    {
-    position: relative;
-    top: auto;
-    }
-}
 
 button{
     -webkit-appearance: none;
@@ -138,7 +140,7 @@ button{
 	border:none;
 }
 
-/* Page Contents */
+/* Page Content box */
 
 .page-contents{
     margin-top: 170px;
@@ -147,12 +149,19 @@ button{
     -webkit-transform: translateZ(0px);
 }
 
+.page-contents-section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #fff;
+    padding-bottom: 35px;
+}
+
 @media (max-width: 767px)
 {
-    .page-contents
+    .page-contents, .page-contents-section
     {
-    margin-top:50px;
-	margin-bottom: 50px;
+    margin-top:170px;
+	margin-bottom:50px;
     }
 }
 
@@ -227,7 +236,7 @@ button{
 	}
 }
 
-/* Type */
+/* Content Title */
 
 .content-title{
     font-family: 'josefin sans', sans-serif;
@@ -236,13 +245,115 @@ button{
     color:#414141;
 }
 
-@media (max-width: 1024px) 
+.content-title-reg{
+    font-family: 'josefin sans', sans-serif;
+    text-align: right;
+    font-size: 2.8em;
+    color:#414141;
+}
+
+.title-wrap{
+    text-align: right;
+    display: inline-block;
+}
+
+@media(max-width: 1199px)
 {
-    .content-title {  
-    font-size: 1.8em;
+    .content-title-reg{
+        font-size: 2.3em;
+    }
+}
+
+@media (max-width: 991px) 
+{
+    .content-title, .content-title-reg{
     text-align: center;    
     }
     
+}
+
+@media (max-width: 767px)
+{
+    .content-title, .content-title-reg{
+    font-size: 1.8em;
+    }
+    
+    .title-wrap{
+        display: block;
+        text-align: center;
+    }
+}
+
+.placeholder{
+    color: #8e27f5;
+    font-weight: 600;    
+}
+
+
+/* Slide Right Dash animation */
+
+.dash, .dash-vid{
+    text-align:right;
+}
+
+
+@media (max-width: 991px) 
+{
+    .dash, .dash-vid{
+    text-align:center;  
+    }
+    
+}
+
+.slideRight{
+    
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+    
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+
+		
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-25%);
+        opacity: 0;
+        transition: all .75s ease;
+	}   
+
+	}			
+	100% {
+		transform: translateX(0%);
+        opacity: 1;
+	}	
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-25%);
+                opacity: 0;
+                transition: all .75s ease;
+	}
+
+	}			
+	100% {
+		-webkit-transform: translateX(0%);
+                opacity: 1;
+	}
+}
+
+
+@media (max-width: 767px) 
+{
+.slideRight {   
+  display: flex;
+    }
 }
 
 
@@ -254,9 +365,9 @@ button{
     color:#414141;
 }
 
-@media (max-width: 767px) 
+@media (max-width: 991px) 
 {
-    .page-subheading {   
+    .page-subheading{   
     text-align: center;    
     }
     
@@ -271,9 +382,6 @@ button{
     color: #414141;    
 }
 
-.placeholder{
-text-align: center;
-}
 /* Carousel */
 
 .carousel-item{
@@ -283,7 +391,8 @@ text-align: center;
 .carousel-title{
     font-size:1.2em;
 }
-        
+
+     
 @media (min-width: 768px) {
 
     /* show 3 items */
@@ -390,44 +499,20 @@ text-align: center;
         vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-property: box-shadow, transform;
-        transition-property: box-shadow, transform;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     }
 
-.pagebuttons-video{
-        background-color:#414141;
-        margin: -45px 15px 45px 15px;
-        display:inline-block;
-        color:#ffffff;
-        font-size:14px;
-        font-weight:normal;
-        font-style:normal;
-        height:40px;
-        line-height:40px;
-        width:200px;
-        text-decoration:none;
-        text-align:center;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-property: box-shadow, transform;
-        transition-property: box-shadow, transform;
-    }
 
-.pagebuttons:hover, .pagebuttons-video:hover{
+
+.pagebuttons:hover{
 	background-color:#414141;
     color:#ffffff;    
     text-decoration:none;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    }
+}
 
 
 
@@ -467,116 +552,10 @@ li.dash-bullet:before {
 }
 
 
-/* Slide Right Dash animation */
-.dash{
-    text-align:right;
-}
 
-@media (max-width: 767px) 
-{
-    .dash {
-    text-align:center;  
-    }
-    
-}
-
-
-.slideRight{
-	animation-name: slideRight;
-	-webkit-animation-name: slideRight;	
-    
-
-	animation-duration: 1s;	
-	-webkit-animation-duration: 1s;
-
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;
-
-		
-}
-
-@keyframes slideRight {
-	0% {
-		transform: translateX(-25%);
-        opacity: 0;
-        transition: all .75s ease;
-	}   
-
-	}			
-	100% {
-		transform: translateX(0%);
-        opacity: 1;
-	}	
-}
-
-@-webkit-keyframes slideRight {
-	0% {
-		-webkit-transform: translateX(-25%);
-                opacity: 0;
-                transition: all .75s ease;
-	}
-
-	}			
-	100% {
-		-webkit-transform: translateX(0%);
-                opacity: 1;
-	}
-}
-
-
-@media (max-width: 767px) 
-{
-.slideRight {   
-  display: flex;
-    }
-}
  
 /* Sponsors */
-#aside-sponsors{
-	padding: 36px 0px 0px 0px;
-	font-family: 'Roboto', sans-serif;
-	font-size:.8em;
-	background-color: transparent;
-	}
 
-
-.sponsor-details{
-	font-family: 'Roboto', sans-serif;
-	font-size:.8em;
-	background-color: transparent;
-	}
-
-@media (max-width: 767px) 
-{
-    .sponsor-details {
-    text-align: center;    
-    }
-    
-}
-
-.sponsor-detail-heading{
-	color: #414141;
-	padding:0;
-	margin:0 0 18px 0;
-	font-family: 'Roboto', sans-serif;
-	}
-
-.sponsor-details a:link, 
-.sponsor-details a:visited {
-	text-decoration: none;
-	color: #414141;
-	}
-	
-.sponsor-details a:hover {
-	color:#4897D8;
-	}
-
-.sponsor-detail-heading{
-	color: #414141;
-	padding:0;
-	margin:0 0 18px 0;
-	font-family: 'Roboto', sans-serif;
-	}
 .sponsor-details img{
     height: 120px;
     width: 120px;
@@ -599,6 +578,7 @@ text-align: right;
 }
 
 /* Hero */
+
 .hero{
     height: 650px;
 }
@@ -724,21 +704,43 @@ text-align: right;
         opacity: 1;
     }
 }
-/* Page Contents */
 
-.page-contents{
-    margin-top: 170px;
-    margin-bottom: 80px;
-    background-color: #fff;
-    -webkit-transform: translateZ(0px);
+
+/*-- Return to Top --*/
+
+
+i.fa-chevron-up{
+    color: #fff;
+    background-color: #ec008c;
+    margin: 0;
+    top: 13px;
+	position: relative;
+    font-size: 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	display: inline-block;
+	border-radius: 100px;
+    padding: 0.5em 0.5em;
 }
 
-@media (max-width: 767px)
-{
-    .page-contents
-    {
-    margin-top:50px;
-	margin-bottom: 50px;
-    }
+.return-to-top{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
+
+.return-to-top i{
+    background: ec008c;
+    color: #fff;
+}
+
+.return-to-top:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
 
