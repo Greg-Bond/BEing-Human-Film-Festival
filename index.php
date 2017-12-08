@@ -49,7 +49,7 @@
     <nav class="navbar navbar-expand-lg navbar-toggleable-md fixed-top">
         <div class="container">
             <!--Logo-->
-            <a href="index.php" class="navbar-brand mx-auto my-1"><img class="logo"  src="content/images/BHFFlogo.png"/></a>
+            <a href="index.php" class="navbar-brand my-1"><img class="logo"  src="content/images/BHFFlogo.png"/></a>
             <!--Nav Menu-->
             <div class="collapse navbar-collapse justify-content-center" id="nav-menu">
                 <ul class="navbar-nav">
