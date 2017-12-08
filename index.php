@@ -103,8 +103,8 @@
                 </ul>
             </div>
             <div class="social-media navbar-brand mx-auto mb-0">
-            	<a href="#"><img class="icon" src="content/images/Youtube_circle_colour.png" /></a>
-                <a href="#"><img class="icon" src="content/images/Facebook_circle_colour.png" /></a>
+            	<a target="_blank" href="https://www.youtube.com/channel/UCyB2dBvrMTHzn6MvhH_cceg/featured"><img class="icon" src="content/images/Youtube_circle_colour.png" /></a>
+                <a target="_blank" href="https://www.facebook.com/Being-Human-Film-Festival-719578074898975/"><img class="icon" src="content/images/Facebook_circle_colour.png" /></a>
                 <a href="#"><img class="icon" src="content/images/Instagram_circle_colour.png" /></a>
                 <a href="#"><img class="icon" src="content/images/Twitter_circle_color.png" /></a>
 		<p class="hashtag d-inline d-lg-none d-xl-none mb-0">#bhff2018</p><!--For xs to md-->
@@ -125,20 +125,20 @@
         </div>
     </div>
     <div class="index">
-        <div class="container-fluid col-10 col-md-9 col-lg-8 py-5">
+        <div class="container-fluid col-10 col-lg-8 py-5">
             <div class="row d-flex justify-content-center">
-                <div class="col-12 col-sm-5 col-md-4">
+                <div class="col-12 col-lg-4">
                     <div>
-                        <h1 class="home-title text-center text-sm-right pr-1"><?php echo $contentTitle; ?></h1>
+                        <h1 class="home-title mb-0 text-center text-lg-right pr-1"><?php echo $contentTitle; ?></h1>
                     </div>
                     <div class="dash">
-                        <img src="content/images/dashedborder-rego%20v2.svg" class="slideRight" alt="dashed underline" height="15" width="165"> 
+                        <img src="content/images/dashedborder-rego%20v2.svg" class="slideRight" alt="dashed underline" height="10" width="110"> 
                     </div>
                     <div>
-                        <h3 class="text-center text-sm-right home-subtitle"><?php echo $contentSubtitle; ?></h3>
+                        <h3 class="text-center text-lg-right home-subtitle"><?php echo $contentSubtitle; ?></h3>
                     </div>
                 </div>
-                <div class="col-12 col-sm-7">
+                <div class="col-12 col-lg-8">
                     <div class="row">
                         <div class="col-12">
                             <div class="home-body pl-1"><?php echo $contentBody; ?></div>
@@ -259,8 +259,8 @@
                 </div>
 				<div class="col-sm-2 cols">
 				<div class="social-networks">
-					<a target="_blank" href="#"><img class="footer-icon" src="content/images/Youtube_circle_bw.png"></a>
-					<a target="_blank" href="#"><img class="footer-icon" src="content/images/Facebook_circle_bw.png"></a>
+					<a target="_blank" href="https://www.youtube.com/channel/UCyB2dBvrMTHzn6MvhH_cceg/featured"><img class="footer-icon" src="content/images/Youtube_circle_bw.png"></a>
+					<a target="_blank" href="https://www.facebook.com/Being-Human-Film-Festival-719578074898975/"><img class="footer-icon" src="content/images/Facebook_circle_bw.png"></a>
 					<a target="_blank" href="#"><img class="footer-icon" src="content/images/Instagram_circle_bw.png"></a>
 					<a target="_blank" href="#"><img class="footer-icon" src="content/images/Twitter_circle_bw.png"></a>
 					<p class="hashtag d-inline align-middle">#bhff2018</p>
