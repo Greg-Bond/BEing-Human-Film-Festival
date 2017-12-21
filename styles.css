@@ -158,10 +158,14 @@ button{
 
 @media (max-width: 767px)
 {
-    .page-contents, .page-contents-section
+    .page-contents
     {
-    margin-top:170px;
-	margin-bottom:50px;
+        margin-top:170px;
+        margin-bottom:50px;
+    }
+    .page-contents-section
+    {
+        margin-bottom: 50px;
     }
 }
 
@@ -742,5 +746,9 @@ i.fa-chevron-up{
     transform: scale(1.1);
 }
 
+/* Modal */
 
+.modal-content img{
+    width:100%;
+}
 

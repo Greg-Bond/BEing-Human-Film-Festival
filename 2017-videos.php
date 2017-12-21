@@ -174,7 +174,7 @@ while($row=mysqli_fetch_array($result))
         </div>
         <div class="row">
             <div class="col-12"><!-- Heading column -->
-                <div class="title-wrap ml-3">
+                <div class="title-wrap">
                     <h1 class="content-title mb-0">2017 Videos</h1>
                     <img src="content/images/dashedborder-rego%20v2.svg" class="slideRight dash-vid" alt="dashed underline" height="10" width="110">
                 </div>
