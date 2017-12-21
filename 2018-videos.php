@@ -173,8 +173,8 @@ while($row=mysqli_fetch_array($result))
             <a href="2017-videos.php" class="pagebuttons">BHFF 2017 Entries</a>
         </div>
         <div class="row">
-            <div class="col-6"><!-- Heading column -->
-                <div class="title-wrap ml-3">
+            <div class="col-12"><!-- Heading column -->
+                <div class="title-wrap">
                     <h1 class="content-title mb-0">2018 Videos</h1>
                     <img src="content/images/dashedborder-rego%20v2.svg" class="slideRight dash-vid" alt="dashed underline" height="10" width="110">
                 </div>
@@ -183,20 +183,22 @@ while($row=mysqli_fetch_array($result))
         
         <!--Delete section when entries are uploaded START DELETE SECTION-->
         <div class="row">
-            <div class="col-6 pt-4 ml-3">
-                <h2 class="placeholder">COMING SOON</h2> 
-                <p><a href="2017-videos.php">View BHFF 2017 entries</a></p>
+            <div class="col-12 py-5">
+                <h2 class="placeholder text-center">COMING SOON</h2> 
+                <p class="text-center"><a href="2017-videos.php">View BHFF 2017 entries</a></p>
             </div>
         </div>
         <!--END DELETE SECTION-->
         
-        <div class="row video-player mx-1 my-4">
+        <!--Uncomment this section when entries are uploaded-->
+        <!--START UNCOMMENT SECTION-->
+        <!--<div class="row video-player mx-1 my-4">
             <div class="embed-responsive embed-responsive-16by9 col-12 col-md-8 mb-4 mb-md-0">
                 <!--FEATURED VIDEO-->
-                <iframe name="youtube-player" class="embed-responsive-item" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+                <!--<iframe name="youtube-player" class="embed-responsive-item" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
             </div>
             <!--FEATURED VIDEO DETAILS-->
-            <div class="video-info col-12 col-md-4 mt-3">
+            <!--<div class="video-info col-12 col-md-4 mt-3">
                 <p class="videoTitle" id="videoTitle"></p>
                 <p class="videoCreator" id="videoCreator"></p>
                 <p class="videoSchool" id="videoSchool"></p>
@@ -204,7 +206,7 @@ while($row=mysqli_fetch_array($result))
             </div>
         </div>
         <!--Carousel-->
-        <div id="video-carousel" class="row mx-1 carousel slide" data-interval="3500" data-ride="carousel">
+        <!--<div id="video-carousel" class="row mx-1 carousel slide" data-interval="3500" data-ride="carousel">
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 <?php echo $slides; ?>
             </div>
@@ -214,8 +216,11 @@ while($row=mysqli_fetch_array($result))
             <a class="carousel-control-next" href="#video-carousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </a>
-        </div>
+        </div>-->
+        <!--END UNCOMMENT SECTION-->
     </div>
+    
+
     <!--Footer-->
     <footer id="footer">
         <div class="container-fluid">
