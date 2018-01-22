@@ -19,7 +19,7 @@
     <meta property="og:url" content="http://www.beinghumanfilmfestival.com/2018-videos/">
     <meta property="og:title" content="2018 Videos | BEing Human Film Festival">
     <meta property="og:image" content="content/images/BHFFog.jpg">
-    <meta property="og:description" content="The BEing Human Film Festival's video submissions for 2018.">
+    <meta property="og:description" content="">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
     <!--Base href-->
@@ -295,7 +295,8 @@ while($row=mysqli_fetch_array($result))
 			</div>
             </div>
 			<div class="copyright">
-                <p class="text-center">&copy; 2017 BEing Human Film Festival</p>
+                <p class="text-center">&copy; 2018 BEing Human Film Festival</p>
+                <p class="text-center creator">Created by: G.Bond, JJ.Daco and R.Sharma</p>
             </div>
     </footer>
 <!--Javascript-->

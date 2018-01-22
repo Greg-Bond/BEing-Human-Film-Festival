@@ -19,7 +19,7 @@
     <meta property="og:url" content="http://www.beinghumanfilmfestival.com/">
     <meta property="og:title" content="Home | BEing Human Film Festival">
     <meta property="og:image" content="content/images/BHFFog.jpg">
-    <meta property="og:description" content="Stay up-to-date with current BEing Human Film Festival news on their home page">
+    <meta property="og:description" content="">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
     <!--Base href-->
@@ -272,7 +272,8 @@
 			</div>
             </div>
 			<div class="copyright">
-                <p class="text-center">&copy; 2017 BEing Human Film Festival</p>
+                <p class="text-center">&copy; 2018 BEing Human Film Festival</p>
+                <p class="text-center creator">Created by: G.Bond, JJ.Daco and R.Sharma</p>
             </div>
     </footer>
 <!--Javascript-->
