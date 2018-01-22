@@ -19,7 +19,7 @@
     <meta property="og:url" content="http://www.beinghumanfilmfestival.com/">
     <meta property="og:title" content="Home | BEing Human Film Festival">
     <meta property="og:image" content="content/images/BHFFog.jpg">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="Stay up-to-date with current BEing Human Film Festival news on their home page">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
     <!--Base href-->

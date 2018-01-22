@@ -19,7 +19,7 @@
     <meta property="og:url" content="http://www.beinghumanfilmfestival.com/2018-videos/">
     <meta property="og:title" content="2018 Videos | BEing Human Film Festival">
     <meta property="og:image" content="content/images/BHFFog.jpg">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="The BEing Human Film Festival's video submissions for 2018.">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
     <!--Base href-->
