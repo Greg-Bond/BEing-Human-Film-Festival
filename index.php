@@ -12,14 +12,14 @@
     <!--Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Meta Data-->
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="bhff2018, bhff, BEing Human Film Festival, international, film festival, short films, film making, inner-west sydney, sydney, australia, high school students, school project, education, youth, being human, news, promo video, current news, useful links, home page, homepage, compassion, understanding, tolerance, 108 lives project, one community, special screening, grand final event, fundraising">
+    <meta name="description" content="Stay up-to-date with all current BEing Human Film Festival news and find useful links by visting the BHFF home page">
     <!--Open Graph Data-->
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.beinghumanfilmfestival.com/">
     <meta property="og:title" content="Home | BEing Human Film Festival">
     <meta property="og:image" content="content/images/BHFFog.jpg">
-    <meta property="og:description" content="Stay up-to-date with current BEing Human Film Festival news on their home page">
+    <meta property="og:description" content="Stay up-to-date with all current BEing Human Film Festival news and find useful links by visting the BHFF home page">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
     <!--Base href-->
