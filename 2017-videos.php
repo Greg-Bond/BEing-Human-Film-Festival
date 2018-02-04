@@ -12,14 +12,14 @@
     <!--Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Meta Data-->
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="bhff, 2017, BEing Human Film Festival, film festival, short films, film making, inner-west sydney, school project, sydney, australia, high school students, education, youth, being human, video, submissions, entries, share ideas, community, compassion, understanding, tolerance, documentary, drama, comedy, sci-fi, no dialogue, Canterbury Girls High School, Canterbury Boys High School, Ashfield Boys High School, Dulwich High">
+    <meta name="description" content="The BEing Human Film Festival's video submissions from Inner-West Sydney High-school students for 2017.">
     <!--Open Graph Data-->
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.beinghumanfilmfestival.com/2017-videos/">
     <meta property="og:title" content="2017 Videos | BEing Human Film Festival">
     <meta property="og:image" content="content/images/BHFFog.jpg">
-    <meta property="og:description" content="The BEing Human Film Festival's video submissions for 2017.">
+    <meta property="og:description" content="The BEing Human Film Festival's video submissions from Inner-West Sydney High-school students for 2017.">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
     <!--Base href-->
