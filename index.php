@@ -116,7 +116,7 @@
     <!--Page Contents-->
     <div class="hero">
         <div class="hero-video d-none d-lg-block d-md-block mb-0">
-            <video class="" id="" autoplay loop>
+            <video class="" id="bg-vid" autoplay loop muted>
                 <source src="content/video/BHFFvideohero.mp4" type="video/mp4">
             </video>
         </div>
@@ -272,7 +272,8 @@
 			</div>
             </div>
 			<div class="copyright">
-                <p class="text-center">&copy; 2017 BEing Human Film Festival</p>
+                <p class="text-center">&copy; 2018 BEing Human Film Festival</p>
+                <p class="text-center creator">Created by: G.Bond, JJ.Daco and R.Sharma</p>
             </div>
     </footer>
 <!--Javascript-->
@@ -317,8 +318,10 @@
         });
     });
     
-
-
+   $(".hero").click(function() {
+        var bool = $("#bg-vid").prop("muted");
+        $("#bg-vid").prop("muted",!bool);
+   });
 
 </script>
 </body>

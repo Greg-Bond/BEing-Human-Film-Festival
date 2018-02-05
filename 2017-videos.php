@@ -281,7 +281,8 @@ while($row=mysqli_fetch_array($result))
 			</div>
             </div>
 			<div class="copyright">
-                <p class="text-center">&copy; 2017 BEing Human Film Festival</p>
+                <p class="text-center">&copy; 2018 BEing Human Film Festival</p>
+                <p class="text-center creator">Created by: G.Bond, JJ.Daco and R.Sharma</p>
             </div>
     </footer>
 <!--Javascript-->

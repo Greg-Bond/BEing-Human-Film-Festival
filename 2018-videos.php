@@ -183,9 +183,12 @@ while($row=mysqli_fetch_array($result))
         
         <!--Delete section when entries are uploaded START DELETE SECTION-->
         <div class="row">
-            <div class="col-12 py-5">
+            <div class="col-12 py-5 temp-content">
                 <h2 class="placeholder text-center">COMING SOON</h2> 
                 <p class="text-center"><a href="2017-videos.php">View BHFF 2017 entries</a></p>
+                <video class="" id="promo-vid" autoplay controls>
+                    <source src="content/video/BHFFvideohero.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
         <!--END DELETE SECTION-->
@@ -295,7 +298,8 @@ while($row=mysqli_fetch_array($result))
 			</div>
             </div>
 			<div class="copyright">
-                <p class="text-center">&copy; 2017 BEing Human Film Festival</p>
+                <p class="text-center">&copy; 2018 BEing Human Film Festival</p>
+                <p class="text-center creator">Created by: G.Bond, JJ.Daco and R.Sharma</p>
             </div>
     </footer>
 <!--Javascript-->
@@ -365,6 +369,13 @@ while($row=mysqli_fetch_array($result))
         document.getElementById("videoSchool").textContent = videoSchool;
         document.getElementById("videoCountry").textContent = videoCountry;
     }
+    
+    //promo video
+    
+     $(".temp-content").click(function() {
+        var bool = $("#promo-vid").prop("muted");
+        $("#promo-vid").prop("muted",!bool);
+   });
     
 </script>
 
